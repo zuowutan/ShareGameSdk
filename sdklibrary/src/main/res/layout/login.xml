@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    android:background="@drawable/shape_back"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:textSize="20sp"
+        android:background="#fff"
+        android:gravity="center"
+        android:text="账 号 登 录"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#e7e7e7"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="7dp"
+        android:layout_marginRight="7dp"
+        android:layout_height="100dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:background="@drawable/shape_login"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:scaleX="0.8"
+                android:paddingRight="3dp"
+                android:layout_marginTop="3dp"
+                android:background="@drawable/gamesdk_username"
+                android:layout_height="32dp" />
+
+            <EditText
+                android:id="@+id/loginusername"
+                android:layout_width="0dp"
+                android:layout_weight="6"
+                android:layout_height="match_parent"
+                android:hint="请输入账号/手机号:"
+                android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789_"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:background="@null"
+                android:maxLength="15"
+                android:layout_marginLeft="5dp"
+                />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent" />
+            <ImageView
+                android:layout_width="0dp"
+                android:gravity="center"
+                android:src="@drawable/gamesdk_btn_dropdown"
+                android:layout_height="match_parent"
+                android:scaleX="0.5"
+                android:scaleY="0.5"
+                android:layout_marginRight="2dp"
+                android:layout_weight="1"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="46dp"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/shape_login"
+            >
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:scaleX="0.6"
+                android:scaleY="0.9"
+                android:paddingRight="3dp"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/gamesdk_pwd_icon"
+                android:layout_height="32dp" />
+
+            <EditText
+                android:id="@+id/loginpassword"
+                android:layout_width="0dp"
+                android:layout_weight="6"
+                android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789_"
+                android:layout_height="match_parent"
+                android:hint="请输入密码:"
+                android:password="true"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:background="@null"
+                android:maxLength="15"
+                android:layout_marginLeft="5dp"
+                />
+            <TextView
+                android:id="@+id/mvpforgetpassword"
+                android:layout_width="0dp"
+                android:text="忘记密码"
+                android:gravity="center"
+                android:layout_height="match_parent"
+                android:layout_weight="2"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="7dp"
+        android:layout_marginLeft="7dp"
+        android:orientation="horizontal"
+        android:layout_height="43dp">
+
+        <TextView
+            android:id="@+id/mvplogin"
+            android:layout_width="0dp"
+            android:text="立 即 登 录"
+            android:textSize="16sp"
+            android:textColor="#fff"
+            android:background="@drawable/shape_login_register"
+            android:gravity="center"
+            android:layout_weight="4.8"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="0.2"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:id="@+id/mvpregister"
+            android:text="快 速 注 册"
+            android:textSize="16sp"
+            android:textColor="#55cf7d"
+            android:background="@drawable/shape_login_speed_register"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_weight="4.8"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="4dp"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_marginBottom="10dp"
+        android:layout_height="30dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:gravity="center"
+            android:text="客服电话：010-66666   QQ：435725233"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+
+
+</LinearLayout>
